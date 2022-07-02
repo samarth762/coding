@@ -14,5 +14,6 @@ public:
             left+=nums[i];
         }
         return -1;
+  
     }
 };
