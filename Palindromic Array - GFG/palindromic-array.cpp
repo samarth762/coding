@@ -13,7 +13,6 @@ public:
     {
     	// code here
     	int val=1;
-    	int n1=sizeof(a)/sizeof(a[0]);
     	for(int i=0;i<n;i++){
     	    string str=to_string(a[i]);
     	
