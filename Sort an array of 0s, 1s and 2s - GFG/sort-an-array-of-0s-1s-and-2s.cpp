@@ -35,27 +35,27 @@ class Solution
         // for(int i=0;i<n;i++){
         //     a[i]=v[i];
         // }
-        vector<int> zero,one,two;
+        int zero=0,one=0,two=0;
         for(int i=0;i<n;i++){
             if(a[i]==0){
-                zero.push_back(0);
+                zero++;
             }
             else if(a[i]==1){
-                one.push_back(1);
+                one++;
             }
             else if(a[i]==2){
-                two.push_back(2);
+                two++;
             }
         }
         int k=0;
         while(k<n){
-            for(int i=0;i<zero.size();i++){
+            for(int i=0;i<zero;i++){
                 a[k++]=0;
             }
-            for(int i=0;i<one.size();i++){
+            for(int i=0;i<one;i++){
                 a[k++]=1;
             }
-            for(int i=0;i<two.size();i++){
+            for(int i=0;i<two;i++){
                 a[k++]=2;
             }
         }
