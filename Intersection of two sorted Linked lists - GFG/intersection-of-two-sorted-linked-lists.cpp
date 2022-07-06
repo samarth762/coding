@@ -85,11 +85,11 @@ Node* findIntersection(Node* head1, Node* head2)
 {
     // Your Code Here
     Node* n1=head1,*n2=head2;
-    Node* head3=NULL,*node=NULL;
+    Node* head3=head1,*node=NULL;
     while(n1 && n2){
         if(n1->data==n2->data){
             Node* newNode=new Node(n1->data);
-            if(head3==NULL){
+            if(head3==head1){
                 head3=node=newNode;
             }
             else{
